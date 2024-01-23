@@ -14,14 +14,13 @@ body,html{
     background-color: black;
     color:white;
 }
-/* --------------------------------------------------page-1: landing page--------------------------------- */
+/* -------------------------------------------------------------------------------------------------- */
 
 #landing-page{
     width:100%;
     height:100vh;
 }
 
-/* ---------------------------------------------nav section--------------------------- */
 #nav{
     
     /* border: 1px solid white; */
@@ -33,4 +32,277 @@ body,html{
     padding: 3vh 2vw;
     font-size: 1.5vw;
 }
+/* --------------------------------------------------------banner section-------------------------- */
+#banner{
+    /* margin-top: 10vh; */
+    width:100%;
+    height:85%;
+    /* border: 1px solid white; */
+    padding: 2vw;
+}
+#title-1-cont , #title-2-cont{
+    padding:2vh;
+    height:40%;
+    width:70%;
+    display:flex;
+    font-size: 5vw;
+    opacity: 0.6;
+    font-weight: lighter;
+}
 
+#title-1-cont {    
+    align-items: center;
+}
+#title-2-cont{
+    flex-direction: column;
+    align-items: flex-end;   
+    justify-content: center;
+}
+#title-2-count h1{
+    font-size: 4vw;
+    font-weight: lighter;
+}
+#title-2-cont h6{
+    font-size: 1vw;
+}
+
+
+/* -------------------------------------------------------page-2:elements page--------------------------- */
+#elems-page{
+    width:100%;
+    color:white;
+    background-color: black;
+    padding: 2vh 5vw;
+    position: relative;
+    
+}
+.elems-div{
+    width:90%;
+    height:40vh;
+    border-top: 1px solid white;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+    opacity:0.7;
+    position: relative;
+    
+    
+}
+.elems-div h1{
+    font-size: 8vw;;
+    
+}
+.elems-div h6{
+    font-size: 1.5vw;;
+    opacity:1;
+  
+}
+.elems-div img{
+    position: absolute;
+    width:15vw;
+    height:140%;
+    display: none;
+
+   
+    z-index: 999;
+}
+
+/* ------------------------------------------------page-3: about page--------------------------------- */
+
+
+#about-page{
+    width:100%;
+    height:150vh;
+    color:white;
+    background-color: black;
+    margin: 40vh 0;
+    /* border: 1px solid white; */
+    
+}
+
+#about-div{
+    height:60%;
+    width:90%;
+    margin: 0 auto;
+    display:flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    /* border: 1px solid white; */
+}
+#dp-img-div{
+    height:50%;
+    aspect-ratio: 1/1;
+    /* border: 1px solid white; */
+    margin-right: 5%;
+}
+#dp{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#about-msg-div{
+    height:100%;
+    width: 45%;
+    /* border: 1px solid white; */
+    margin-right: 10%;
+    display: flex;
+    flex-direction: column;
+}
+#about-msg-heading{
+    /* border: 1px solid white; */
+    width:100%;
+    height:10%;
+    opacity: 0.7;
+    text-transform: uppercase;
+}
+#about-msg{
+    /* border: 1px solid white; */
+    width:100%;
+    height:55%;
+    font-size: 1.5vw;;
+}
+#Lets-talk-btn{
+    /* border: 1px solid white; */
+    width:100%;
+    height:15%;
+}
+ #Lets-talk-btn a{
+    width:30%;
+    height:80%;
+    padding: 1em 2em; 
+    background-color: black;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 0.5em;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    text-decoration: none;
+    font-size: 1.2vw; 
+ 
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+#Lets-talk-btn a:hover{
+    background-color: white;
+    color:black;
+}
+#subscribe-div{
+    height:10%;
+    width:90%;
+    margin: 0 auto;
+    /* border: 1px solid white; */
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 15%;
+    
+}
+#forgot-msg{
+    text-transform: uppercase;
+    opacity: 0.7;
+    /* border: 1px solid white; */
+    width:40%;
+    /* height:15%; */
+    font-size: 1.2vw;
+}
+#subscribe-link{
+    text-transform: uppercase;
+    /* border: 1px solid white; */
+    width:40%;
+    /* height:25%; */
+    font-size: 1.6vw;
+    text-decoration: none;
+    
+}
+#subscribe-link a{
+    text-decoration: none;
+    color:white;
+
+}
+/* ------------------------------------------------------about page responsiveness---------------------- */
+
+@media(max-width:480px){
+    #about-page{
+        width:100%;
+        height:150vh;
+        color:white;
+        background-color: black;
+        margin: 10vh 0;
+        /* border: 1px solid white; */
+        
+    }
+    #about-div{
+        /* height:60%;
+        width:90%;
+        margin: 0 auto;
+        display:flex; */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:5%;
+        height: auto;
+        /* border: 1px solid white; */
+    }
+    #dp-img-div{
+        height:50vw;
+        aspect-ratio: 1/1;
+        /* border: 1px solid white; */
+        margin-right: 0;
+        margin-bottom:5vh;
+    }
+    #dp{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    #about-msg-div{
+        /* height:100%; */
+        width: 45%;
+        text-align: center;
+        /* border: 1px solid white; */
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;
+        gap:2vh;
+    }
+    #about-msg-heading{
+        /* border: 1px solid white; */
+        width:100%;
+        height:10%;
+        opacity: 0.7;
+        text-transform: uppercase;
+    }
+    #about-msg{
+        /* border: 1px solid white; */
+        width:100%;
+        height:55%;
+        font-size: 1.5vw;;
+    }
+    #Lets-talk-btn{
+        /* border: 1px solid white; */
+        width:100%;
+        height:15%;
+    }
+     #Lets-talk-btn a{
+        width:30%;
+        height:80%;
+        padding: 1em 2em; 
+        background-color: black;
+        color: #fff;
+        font-weight: bold;
+        border-radius: 0.5em;
+        border-top: 1px solid white;
+        border-left: 1px solid white;
+        text-decoration: none;
+        font-size: 1.2vw; 
+     
+        text-align: center;
+        transition: background-color 0.3s ease;
+    }
+    #Lets-talk-btn a:hover{
+        background-color: white;
+        color:black;
+    }
+}
