@@ -9,3 +9,28 @@ body,html{
     font-family: "Noto Sans", sans-serif;
     
 }
+#main{
+    width:100%;
+    background-color: black;
+    color:white;
+}
+/* --------------------------------------------------page-1: landing page--------------------------------- */
+
+#landing-page{
+    width:100%;
+    height:100vh;
+}
+
+/* ---------------------------------------------nav section--------------------------- */
+#nav{
+    
+    /* border: 1px solid white; */
+    width:100%;
+    height:15%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3vh 2vw;
+    font-size: 1.5vw;
+}
+
