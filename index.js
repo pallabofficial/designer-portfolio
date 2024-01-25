@@ -1,7 +1,7 @@
-// const scroll = new LocomotiveScroll({
-//     el: document.querySelector('#main'),
-//     smooth: true
-// });
+const scroll = new LocomotiveScroll({
+    el: document.querySelector('#supreme'),
+    smooth: true
+});
 
 function movingPointer(){
     window.addEventListener("mousemove", function(event){
