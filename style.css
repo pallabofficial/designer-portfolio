@@ -157,8 +157,9 @@ body,html{
     position: absolute;
     width:15vw;
     aspect-ratio: 1/1;
-    display: none;
-    scale:1.5;
+    /* display: none; */
+    opacity: 0;
+    scale:1.1;
 
    
     z-index: 999;

@@ -35,9 +35,13 @@ page1Anim();
 
 document.querySelectorAll(".elems-div").forEach(function(element){
     element.addEventListener("mousemove", function(event){
+        let diff = event.clientY - element.getBoundingClientRect().top;
         gsap.to(element.querySelector("img"), {
-            display:"inline-block",
+            opacity:1,
+            // display:"block",
             ease: Power1,
+            top:diff,
+            left:event.clientX,
         })
     })
 })
