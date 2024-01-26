@@ -32,3 +32,12 @@ function page1Anim(){
 }
 
 page1Anim();
+
+document.querySelectorAll(".elems-div").forEach(function(element){
+    element.addEventListener("mousemove", function(event){
+        gsap.to(element.querySelector("img"), {
+            display:"inline-block",
+            ease: Power1,
+        })
+    })
+})
